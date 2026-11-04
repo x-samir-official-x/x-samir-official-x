@@ -66,7 +66,7 @@ function heatmap(user) {
   const cal = user.contributionsCollection.contributionCalendar;
   const weeks = cal.weeks;
   const max = Math.max(1, ...weeks.flatMap((w) => w.contributionDays.map((d) => d.contributionCount)));
-  const level = (n) => (n === 0 ? 0 : Math.min(4, Math.ceil((n / max) * 4)));
+  const level = (n) => (n === 0 ? 0 : Math.max(1, Math.min(4, Math.ceil((Math.log(n + 1) / Math.log(max + 1)) * 4))));
   const cell = 13, gap = 3, left = 46, top = 74;
   const width = left + weeks.length * (cell + gap) + 30;
   const lg = width - 64;
