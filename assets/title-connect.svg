@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="122" viewBox="0 0 1200 122" role="img" aria-label="05 Connect — Let's build something worth using.">
+<title>05 Connect — Let's build something worth using.</title>
+<style>
+.fi{animation:fi .9s ease-out both}
+.su{animation:su .9s cubic-bezier(.2,.7,.2,1) both}
+@keyframes fi{from{opacity:0}to{opacity:1}}
+@keyframes su{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion: reduce){.fi,.su,.ty{animation:none!important}}
+</style>
+<defs>
+  <linearGradient id="tt-bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#14100A"/><stop offset="1" stop-color="#0B0906"/></linearGradient>
+  <radialGradient id="tt-glow" cx="0.18" cy="0.1" r="0.8"><stop offset="0" stop-color="#8A6A2B" stop-opacity="0.38"/><stop offset="0.55" stop-color="#3D2E14" stop-opacity="0.12"/><stop offset="1" stop-color="#3D2E14" stop-opacity="0"/></radialGradient>
+  <linearGradient id="tt-line" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#D4AF63" stop-opacity="0"/><stop offset="0.5" stop-color="#EBD6A3"/><stop offset="1" stop-color="#D4AF63" stop-opacity="0"/></linearGradient>
+  <pattern id="tt-grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#3D2E14" stroke-width="0.5" opacity="0.45"/></pattern>
+  <filter id="tt-blur" x="-20%" y="-300%" width="140%" height="700%"><feGaussianBlur stdDeviation="3"/></filter>
+</defs>
+
+<text x="40" y="34" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#D4AF63" letter-spacing="3.2" text-anchor="start">05  CONNECT</text>
+<text x="1160" y="34" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" fill="#B8AA8F" letter-spacing="3.2" text-anchor="end">OPEN TO WORK</text>
+<text x="38" y="84" font-family="Georgia, 'Times New Roman', serif" font-size="36" fill="#FBF7EE" class="su">Let's build something <tspan fill="#EBD6A3" font-style="italic">worth using.</tspan></text>
+<rect x="40" y="104" width="1120" height="1" fill="url(#tt-line)" opacity="0.7"/>
+<circle cx="600" cy="104" r="3" fill="#EBD6A3"><animate attributeName="cx" values="120;1080;120" dur="12s" repeatCount="indefinite"/></circle>
+
+</svg>

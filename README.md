@@ -1,79 +1,53 @@
-<div align="center">
+<a href="https://github.com/x-samir-official-x">
+  <img src="assets/hero.svg" width="100%" alt="Samir Sayed — Full-Stack Engineer, AI Product Builder, RTL-first interfaces. Building products for real people — Arabic first. Ismailia, Egypt.">
+</a>
 
-<picture>
-  <source media="(prefers-reduced-motion: reduce)" srcset="./assets/samir-hero-static.svg" />
-  <img src="./assets/samir-hero.svg" alt="Samir Sayed — Full-Stack Engineer · AI Product Builder · RTL-First Interfaces" width="100%" />
-</picture>
+<p align="center">
+  <a href="https://www.linkedin.com/in/samir-sayed-494a6b428"><img src="https://img.shields.io/badge/LinkedIn-samir--sayed-8A6A2B?style=for-the-badge&labelColor=14100A&logoColor=FBF7EE&logo=data:image/svg%2bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0iI0ZCRjdFRSIgZD0iTTIwLjQ1IDIwLjQ1aC0zLjU2di01LjU3YzAtMS4zMy0uMDItMy4wNC0xLjg1LTMuMDQtMS44NiAwLTIuMTQgMS40NS0yLjE0IDIuOTR2NS42N0g5LjM1VjloMy40MXYxLjU2aC4wNWMuNDgtLjkgMS42NC0xLjg1IDMuMzctMS44NSAzLjYgMCA0LjI3IDIuMzcgNC4yNyA1LjQ2djYuMjhaTTUuMzQgNy40M2EyLjA2IDIuMDYgMCAxIDEgMC00LjEzIDIuMDYgMi4wNiAwIDAgMSAwIDQuMTNaTTcuMTIgMjAuNDVIMy41NlY5aDMuNTZ2MTEuNDVaTTIyLjIyIDBIMS43N0MuNzkgMCAwIC43NyAwIDEuNzN2MjAuNTRDMCAyMy4yMy43OSAyNCAxLjc3IDI0aDIwLjQ1Yy45OCAwIDEuNzgtLjc3IDEuNzgtMS43M1YxLjczQzI0IC43NyAyMy4yIDAgMjIuMjIgMFoiLz48L3N2Zz4=" alt="LinkedIn profile"></a>
+  <a href="mailto:01283871350samir@gmail.com"><img src="https://img.shields.io/badge/Email-01283871350samir@gmail.com-8A6A2B?style=for-the-badge&labelColor=14100A&logoColor=FBF7EE&logo=gmail" alt="Email"></a>
+  <a href="https://github.com/x-samir-official-x?tab=repositories"><img src="https://img.shields.io/badge/GitHub-x--samir--official--x-8A6A2B?style=for-the-badge&labelColor=14100A&logoColor=FBF7EE&logo=github" alt="GitHub repositories"></a>
+</p>
 
-</div>
+<img src="assets/title-about.svg" width="100%" alt="01 About — Hello, I'm Samir.">
+<img src="assets/about.svg" width="100%" alt="About: full-stack engineer and AI product builder. Stack: React, TypeScript, Node/Express, Supabase, Gemini API. Focus: Arabic-first, RTL-native products for the Egyptian market. Primary language TypeScript; AI through the Gemini API; drawn to RTL-first UX.">
 
-<br/>
+<img src="assets/title-work.svg" width="100%" alt="02 Selected work — Built for real users.">
 
-### Hello — I'm Samir.
+<a href="https://github.com/x-samir-official-x/Aqar-Go"><img src="assets/project-aqar-go.svg" width="100%" alt="Aqar-Go (عقار جو): AI-powered PropTech platform connecting buyers, sellers and financing banks in Egypt. React, TypeScript, Vite, Express, Gemini API, Recharts."></a>
+<p align="center">
+  <a href="https://github.com/x-samir-official-x/Aqar-Go"><img src="https://img.shields.io/badge/Repository-Aqar--Go-3D2E14?style=for-the-badge&labelColor=14100A&logoColor=FBF7EE&logo=github" alt="Aqar-Go repository"></a>
+</p>
 
-I build web products for the Egyptian market, end to end: the interface, the backend, the AI layer, and the delivery. Most of what I ship is **Arabic-first and RTL-native**, because that is who the users are.
+<a href="https://github.com/x-samir-official-x/SCU_Website"><img src="assets/project-athar.svg" width="100%" alt="Athar (أَثَر): student activity portal for the Faculty of Commerce, Suez Canal University — submission, staff review, Arabic PDF forms and 40 activity marks after approval. Demo build with sample data. React, TypeScript, Express, Tesseract OCR, Zod, Helmet."></a>
+<p align="center">
+  <a href="https://github.com/x-samir-official-x/SCU_Website"><img src="https://img.shields.io/badge/Repository-Athar_Portal-3D2E14?style=for-the-badge&labelColor=14100A&logoColor=FBF7EE&logo=github" alt="Athar portal repository"></a>
+</p>
 
-My recent work spans a PropTech platform, a university activity portal with Arabic OCR and PDF generation, and AI-assisted tools built on the Gemini API. I care about products that are clear to use, honest about what they do, and maintainable after launch.
+<a href="https://github.com/x-samir-official-x/safe-space-egypt"><img src="assets/project-safe-space.svg" width="100%" alt="Safe Space: mental-wellbeing platform for young adults in Egypt with mood tracking and a compassionate AI companion. React, TypeScript, Gemini API, Recharts, Tailwind."></a>
+<p align="center">
+  <a href="https://github.com/x-samir-official-x/safe-space-egypt"><img src="https://img.shields.io/badge/Repository-Safe_Space-3D2E14?style=for-the-badge&labelColor=14100A&logoColor=FBF7EE&logo=github" alt="Safe Space repository"></a>
+</p>
 
-<br/>
+<a href="https://github.com/x-samir-official-x/env_friends_scu"><img src="assets/project-env-friends.svg" width="100%" alt="Environment Friends (أصدقاء البيئة): official site of the faculty's environment team at Suez Canal University, driven by a single config file. HTML, CSS, JavaScript, GitHub Pages."></a>
+<p align="center">
+  <a href="https://github.com/x-samir-official-x/env_friends_scu"><img src="https://img.shields.io/badge/Repository-Environment_Friends-3D2E14?style=for-the-badge&labelColor=14100A&logoColor=FBF7EE&logo=github" alt="Environment Friends repository"></a>
+</p>
 
-<div align="center">
+<img src="assets/title-toolkit.svg" width="100%" alt="03 Toolkit — The tools I reach for.">
+<img src="assets/toolkit.svg" width="100%" alt="Toolkit. Languages: TypeScript (primary), JavaScript, HTML, CSS. AI and documents: Gemini API, Tesseract OCR, Arabic PDF generation. Frontend: React, Vite, Tailwind, Radix, TanStack Query, Framer Motion. Backend and data: Node.js, Express, Supabase, Zod, Helmet, Nodemailer. Ship: Vercel, Cloudflare, GitHub Pages, Git. Craft: RTL-first UX, Arabic typography, product thinking.">
 
-### Selected Work
+<img src="assets/title-commits.svg" width="100%" alt="04 Commit log — A year of building.">
+<img src="https://raw.githubusercontent.com/x-samir-official-x/x-samir-official-x/output/github-snake-dark.svg" width="100%" alt="Animated snake eating my real public GitHub contributions from the past year, re-rendered every 12 hours.">
+<img src="https://raw.githubusercontent.com/x-samir-official-x/x-samir-official-x/profile-cards/glance.svg" width="100%" alt="GitHub at a glance: contributions, active days, longest streak, busiest day, commits, pull requests and top languages — live data, re-rendered daily.">
 
-</div>
+<img src="assets/title-connect.svg" width="100%" alt="05 Connect — Let's build something worth using.">
 
-| Project | What it is | Built with |
-|:--|:--|:--|
-| [**Aqar-Go — عقار جو**](https://github.com/x-samir-official-x/Aqar-Go) | AI-powered PropTech platform connecting buyers, sellers and financing banks in Egypt | React · TypeScript · Vite · Express · Gemini API · Recharts |
-| [**أَثَر — Student Activity Portal**](https://github.com/x-samir-official-x/SCU_Website) | Faculty of Commerce (SCU) portal: activity submission, staff review, Arabic PDF forms and grading — demo build | React · TypeScript · Express · Tesseract OCR (Arabic/English) · Zod · Helmet |
-| [**Safe Space**](https://github.com/x-samir-official-x/safe-space-egypt) | Mental-wellbeing platform for young adults in Egypt with mood tracking and a supportive AI companion | React · TypeScript · Gemini API · Recharts · Tailwind |
-| [**Environment Friends — أصدقاء البيئة**](https://github.com/x-samir-official-x/env_friends_scu) | Official site of the faculty's environment team, content-driven from a single config file | HTML · CSS · JavaScript · GitHub Pages |
+<p align="center">
+  <a href="mailto:01283871350samir@gmail.com"><img src="https://img.shields.io/badge/Email-01283871350samir@gmail.com-8A6A2B?style=for-the-badge&labelColor=14100A&logoColor=FBF7EE&logo=gmail" alt="Email"></a>
+  <a href="https://www.linkedin.com/in/samir-sayed-494a6b428"><img src="https://img.shields.io/badge/LinkedIn-samir--sayed-8A6A2B?style=for-the-badge&labelColor=14100A&logoColor=FBF7EE&logo=data:image/svg%2bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0iI0ZCRjdFRSIgZD0iTTIwLjQ1IDIwLjQ1aC0zLjU2di01LjU3YzAtMS4zMy0uMDItMy4wNC0xLjg1LTMuMDQtMS44NiAwLTIuMTQgMS40NS0yLjE0IDIuOTR2NS42N0g5LjM1VjloMy40MXYxLjU2aC4wNWMuNDgtLjkgMS42NC0xLjg1IDMuMzctMS44NSAzLjYgMCA0LjI3IDIuMzcgNC4yNyA1LjQ2djYuMjhaTTUuMzQgNy40M2EyLjA2IDIuMDYgMCAxIDEgMC00LjEzIDIuMDYgMi4wNiAwIDAgMSAwIDQuMTNaTTcuMTIgMjAuNDVIMy41NlY5aDMuNTZ2MTEuNDVaTTIyLjIyIDBIMS43N0MuNzkgMCAwIC43NyAwIDEuNzN2MjAuNTRDMCAyMy4yMy43OSAyNCAxLjc3IDI0aDIwLjQ1Yy45OCAwIDEuNzgtLjc3IDEuNzgtMS43M1YxLjczQzI0IC43NyAyMy4yIDAgMjIuMjIgMFoiLz48L3N2Zz4=" alt="LinkedIn profile"></a>
+  <a href="https://github.com/x-samir-official-x?tab=repositories"><img src="https://img.shields.io/badge/GitHub-x--samir--official--x-8A6A2B?style=for-the-badge&labelColor=14100A&logoColor=FBF7EE&logo=github" alt="GitHub repositories"></a>
+</p>
 
-Client and internal work, not public: **Kadry OS** (operations dashboard), **Banker's Lounge** (banking education platform), and a **WhatsApp lead follow-up bot** for an academy.
-
-<br/>
-
-<div align="center">
-
-### Toolkit
-
-</div>
-
-| Area | Technologies I use in my repositories |
-|:--|:--|
-| **Languages** | TypeScript · JavaScript · HTML · CSS |
-| **Frontend** | React · Vite · Tailwind CSS · Radix UI / shadcn · TanStack Query · Framer Motion · Recharts |
-| **Backend & Data** | Node.js · Express · Supabase · Zod · Nodemailer · Helmet · Rate limiting |
-| **AI & Documents** | Gemini API · Tesseract OCR (Arabic + English) · Arabic PDF generation |
-| **Ship** | Vercel · Cloudflare · GitHub Pages · Git |
-
-<br/>
-
-<div align="center">
-
-### Contribution Heatmap
-
-<img src="https://raw.githubusercontent.com/x-samir-official-x/x-samir-official-x/profile-cards/heatmap.svg" alt="GitHub contribution heatmap — live data, updated daily" width="100%" />
-
-<br/><br/>
-
-### GitHub Stats
-
-<img src="https://raw.githubusercontent.com/x-samir-official-x/x-samir-official-x/profile-cards/stats.svg" alt="GitHub statistics" width="49%" />
-<img src="https://raw.githubusercontent.com/x-samir-official-x/x-samir-official-x/profile-cards/languages.svg" alt="Top languages" width="49%" />
-
-<br/><br/>
-
-### Find Me
-
-<a href="https://www.linkedin.com/in/samir-sayed-494a6b428"><img src="https://img.shields.io/badge/LinkedIn-14100A?style=for-the-badge&logo=linkedin&logoColor=EBD6A3" alt="LinkedIn" /></a>
-<a href="mailto:01283871350samir@gmail.com"><img src="https://img.shields.io/badge/Email-14100A?style=for-the-badge&logo=gmail&logoColor=EBD6A3" alt="Email" /></a>
-<a href="https://github.com/x-samir-official-x"><img src="https://img.shields.io/badge/GitHub-14100A?style=for-the-badge&logo=github&logoColor=EBD6A3" alt="GitHub" /></a>
-<a href="https://github.com/x-samir-official-x?tab=repositories"><img src="https://img.shields.io/badge/All%20Projects-14100A?style=for-the-badge&logo=files&logoColor=EBD6A3" alt="All projects" /></a>
-
-<br/><br/>
-
-<img src="./assets/samir-footer.svg" alt="Built in Egypt · shipped with care" width="100%" />
-
-</div>
+<a href="https://github.com/x-samir-official-x">
+  <img src="assets/footer.svg" width="100%" alt="Samir — building products people can actually use, in Arabic first.">
+</a>

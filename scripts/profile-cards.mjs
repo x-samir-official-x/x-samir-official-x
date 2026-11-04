@@ -145,9 +145,64 @@ function languages(user) {
   return frame(width, height, body, "Top languages");
 }
 
+function glance(user) {
+  const cal = user.contributionsCollection.contributionCalendar;
+  const days = cal.weeks.flatMap((w) => w.contributionDays);
+  const active = days.filter((d) => d.contributionCount > 0).length;
+  let longest = 0, run = 0;
+  for (const d of days) { run = d.contributionCount > 0 ? run + 1 : 0; longest = Math.max(longest, run); }
+  const busiest = days.reduce((a, b) => (b.contributionCount > a.contributionCount ? b : a), days[0] || { date: "", contributionCount: 0 });
+  const busiestLabel = busiest.date ? new Date(busiest.date + "T00:00:00Z").toLocaleString("en-US", { month: "short", day: "numeric", timeZone: "UTC" }) : "—";
+  const cc = user.contributionsCollection;
+  const nums = [
+    [fmt(cal.totalContributions), "contributions", "last 12 months"],
+    [fmt(active), "active days", "at least one commit"],
+    [`${longest}d`, "longest streak", "consecutive days"],
+    [fmt(busiest.contributionCount), "busiest day", busiestLabel],
+    [fmt(cc.totalCommitContributions), "commits", "last 12 months"],
+    [fmt(cc.totalPullRequestContributions), "pull requests", "last 12 months"],
+  ];
+  const W = 1200, H = 300;
+  let cells = "";
+  nums.forEach(([big, label, sub], i) => {
+    const col = i % 3, row = Math.floor(i / 3);
+    const x = 52 + col * 210, y = 92 + row * 100;
+    cells += `<circle cx="${x + 3}" cy="${y - 40}" r="3" fill="${C.gold}"/>
+<text x="${x}" y="${y - 16}" font-family="${MONO}" font-size="11" letter-spacing="3" fill="${C.gold}">${esc(label.toUpperCase())}</text>
+<text x="${x}" y="${y + 20}" font-family="${SERIF}" font-size="34" fill="${C.ivory}">${esc(big)}</text>
+<text x="${x}" y="${y + 40}" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#B8AA8F">${esc(sub)}</text>`;
+  });
+  const totals = {};
+  for (const r of user.repositories.nodes) for (const e of r.languages.edges) totals[e.node.name] = (totals[e.node.name] || 0) + e.size;
+  const sum = Object.values(totals).reduce((a, b) => a + b, 0) || 1;
+  const top = Object.entries(totals).sort((a, b) => b[1] - a[1]).slice(0, 5);
+  const pal = [C.pale, C.gold, "#B88F45", C.accent, "#6B5224"];
+  const bx = 720, bw = 430;
+  let x = bx, bar = "";
+  top.forEach(([, size], i) => { const w = Math.max(2, (size / sum) * bw); bar += `<rect x="${x.toFixed(1)}" y="96" width="${w.toFixed(1)}" height="8" fill="${pal[i]}"/>`; x += w; });
+  const list = top.map(([name, size], i) => {
+    const y = 140 + i * 28;
+    return `<circle cx="${bx + 5}" cy="${y - 4}" r="4.5" fill="${pal[i]}"/>
+<text x="${bx + 20}" y="${y}" font-family="${SERIF}" font-size="17" fill="${C.ivory}">${esc(name)}</text>
+<text x="${bx + bw}" y="${y}" text-anchor="end" font-family="${MONO}" font-size="12" fill="${C.gold}">${((size / sum) * 100).toFixed(1)}%</text>`;
+  }).join("");
+  const body = `<defs><radialGradient id="gl-glow" cx="0.15" cy="0" r="0.9"><stop offset="0" stop-color="${C.accent}" stop-opacity="0.35"/><stop offset="1" stop-color="${C.deep}" stop-opacity="0"/></radialGradient>
+<clipPath id="gl-bar"><rect x="${bx}" y="96" width="${bw}" height="8" rx="4"/></clipPath></defs>
+<rect width="${W}" height="${H}" rx="14" fill="url(#gl-glow)"/>
+<rect x="28" y="0" width="160" height="1.5" fill="${C.pale}" opacity="0.75"/>
+<text x="52" y="44" font-family="${MONO}" font-size="11" letter-spacing="3" fill="#B8AA8F">GITHUB AT A GLANCE · PUBLIC ACTIVITY</text>
+${cells}
+<line x1="690" y1="40" x2="690" y2="${H - 40}" stroke="${C.deep}"/>
+<text x="${bx}" y="74" font-family="${MONO}" font-size="11" letter-spacing="3" fill="${C.gold}">TOP LANGUAGES · BY CODE SIZE</text>
+<g clip-path="url(#gl-bar)">${bar}</g>${list}
+<text x="${W - 40}" y="${H - 18}" text-anchor="end" font-family="${MONO}" font-size="10" letter-spacing="2" fill="#B8AA8F">LIVE DATA · RE-RENDERED DAILY</text>`;
+  return frame(W, H, body, `GitHub at a glance: ${cal.totalContributions} contributions, ${active} active days, longest streak ${longest} days.`);
+}
+
 const user = await fetchData();
 mkdirSync(OUT, { recursive: true });
 writeFileSync(`${OUT}/heatmap.svg`, heatmap(user));
 writeFileSync(`${OUT}/stats.svg`, stats(user));
 writeFileSync(`${OUT}/languages.svg`, languages(user));
+writeFileSync(`${OUT}/glance.svg`, glance(user));
 console.log("Profile cards written to", OUT);
