@@ -9,9 +9,12 @@
 </p>
 
 <img src="assets/title-about.svg" width="100%" alt="01 About — Hello, I'm Samir.">
-<img src="assets/about.svg" width="100%" alt="About: full-stack engineer and AI product builder. Stack: React, TypeScript, Node/Express, Supabase, Gemini API. Focus: Arabic-first, RTL-native products for the Egyptian market. Primary language TypeScript; AI through the Gemini API; drawn to RTL-first UX.">
+<img src="assets/about.svg" width="100%" alt="About: full-stack engineer and AI product builder. Business Information Systems student at the Faculty of Commerce, Suez Canal University. Trained at ITI (Frontend Web Development, 162 hours) and the IEEE SCU Web Bootcamp. Shipped Aqar-Go, Athar portal, Safe Space and Environment Friends. Primary language TypeScript; AI through the Gemini API; drawn to RTL-first UX.">
 
-<img src="assets/title-work.svg" width="100%" alt="02 Selected work — Built for real users.">
+<img src="assets/title-recognition.svg" width="100%" alt="02 Recognition — Proof, on the record.">
+<img src="assets/recognition.svg" width="100%" alt="Recognition: 2nd place (students) at the Faculty of Commerce Environmental Scientific Conference 2026; Suez Canal Authority summer training 2025 rated Excellent, 97 of 100; organizing team of the 8th and 7th Undergraduate Research Conferences; UAE delegate in the faculty Model BRICS; faculty recognition for media activities; student volunteering 2023–2026; communication skills workshop, July 2024.">
+
+<img src="assets/title-work.svg" width="100%" alt="03 Selected work — Built for real users.">
 
 <a href="https://github.com/x-samir-official-x/Aqar-Go"><img src="assets/project-aqar-go.svg" width="100%" alt="Aqar-Go (عقار جو): AI-powered PropTech platform connecting buyers, sellers and financing banks in Egypt. React, TypeScript, Vite, Express, Gemini API, Recharts."></a>
 <p align="center">
@@ -33,14 +36,17 @@
   <a href="https://github.com/x-samir-official-x/env_friends_scu"><img src="https://img.shields.io/badge/Repository-Environment_Friends-3D2E14?style=for-the-badge&labelColor=14100A&logoColor=FBF7EE&logo=github" alt="Environment Friends repository"></a>
 </p>
 
-<img src="assets/title-toolkit.svg" width="100%" alt="03 Toolkit — The tools I reach for.">
+<img src="assets/title-toolkit.svg" width="100%" alt="04 Toolkit — The tools I reach for.">
 <img src="assets/toolkit.svg" width="100%" alt="Toolkit. Languages: TypeScript (primary), JavaScript, HTML, CSS. AI and documents: Gemini API, Tesseract OCR, Arabic PDF generation. Frontend: React, Vite, Tailwind, Radix, TanStack Query, Framer Motion. Backend and data: Node.js, Express, Supabase, Zod, Helmet, Nodemailer. Ship: Vercel, Cloudflare, GitHub Pages, Git. Craft: RTL-first UX, Arabic typography, product thinking.">
 
-<img src="assets/title-commits.svg" width="100%" alt="04 Commit log — A year of building.">
+<img src="assets/title-commits.svg" width="100%" alt="05 Commit log — A year of building.">
 <img src="https://raw.githubusercontent.com/x-samir-official-x/x-samir-official-x/output/github-snake-dark.svg" width="100%" alt="Animated snake eating my real public GitHub contributions from the past year, re-rendered every 12 hours.">
 <img src="https://raw.githubusercontent.com/x-samir-official-x/x-samir-official-x/profile-cards/glance.svg" width="100%" alt="GitHub at a glance: contributions, active days, longest streak, busiest day, commits, pull requests and top languages — live data, re-rendered daily.">
 
-<img src="assets/title-connect.svg" width="100%" alt="05 Connect — Let's build something worth using.">
+<img src="assets/title-certifications.svg" width="100%" alt="06 Certifications — Training, verified.">
+<img src="assets/certifications.svg" width="100%" alt="Certifications: ITI Frontend Web Development, 162 hours (2025); ITIDA, TIEC and Creativa UI/UX (21 hours, 2024) and Digital Marketing Nano Degree (84 hours, 2024); ITIDA TIEC InnovEgypt innovation and startup training, 45 hours; IEEE SCU TechXplore Web Bootcamp (2025); Suez Canal Authority summer training rated Excellent (2025); Faculty of Commerce, Suez Canal University: research participation, conference organizing and communication skills.">
+
+<img src="assets/title-connect.svg" width="100%" alt="07 Connect — Let's build something worth using.">
 
 <p align="center">
   <a href="mailto:01283871350samir@gmail.com"><img src="https://img.shields.io/badge/Email-01283871350samir@gmail.com-8A6A2B?style=for-the-badge&labelColor=14100A&logoColor=FBF7EE&logo=gmail" alt="Email"></a>

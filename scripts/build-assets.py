@@ -4,6 +4,9 @@ Run: python3 scripts/build-assets.py   (writes into assets/)
 """
 from pathlib import Path
 from xml.sax.saxutils import escape as esc
+import base64
+
+PORTRAIT = Path(__file__).resolve().parent / "portrait.jpg"
 
 OUT = Path(__file__).resolve().parent.parent / "assets"
 OUT.mkdir(exist_ok=True)
@@ -61,7 +64,8 @@ def eyebrow(x, y, s, fill=GOLD, anchor="start"):
 # ---------------------------------------------------------------- hero
 def hero():
     p = "hr"
-    orbit_labels = [("UI", 915, 92), ("API", 1110, 128), ("AI", 1122, 300), ("RTL", 880, 330)]
+    PHOTO = base64.b64encode(PORTRAIT.read_bytes()).decode()
+    orbit_labels = [("UI", 880, 100), ("API", 1110, 128), ("AI", 1122, 300), ("RTL", 860, 320)]
     labels = "".join(
         f'<circle cx="{x-10}" cy="{y-4}" r="3" fill="{GOLD}"/>{t(x, y, l, 10, GOLD, MONO, "letter-spacing=\"2\"")}'
         for l, x, y in orbit_labels)
@@ -88,8 +92,8 @@ def hero():
   {t(64, 354, "Building products for real people — Arabic first.", 16, MUTED, SERIF, 'font-style="italic"')}
 </g>
 <line x1="64" y1="382" x2="1136" y2="382" stroke="{DEEP}"/>
-{eyebrow(64, 404, "Faculty of Commerce · Suez Canal University", MUTED)}
-{eyebrow(1136, 404, "Ismailia · Egypt · عربي / English", MUTED, "end")}
+{eyebrow(64, 404, "BIS · Faculty of Commerce · Suez Canal University", MUTED)}
+{eyebrow(1136, 404, "ITI 162h · IEEE SCU · Ismailia, Egypt", MUTED, "end")}
 
 <g fill="none" stroke="{GOLD}">
   <circle cx="1000" cy="208" r="150" opacity="0.18"/>
@@ -101,11 +105,16 @@ def hero():
 <circle r="3" fill="{PALE}"><animateMotion dur="14s" repeatCount="indefinite" path="M1150 208 A150 150 0 1 1 850 208 A150 150 0 1 1 1150 208"/></circle>
 {labels}
 <g class="fi" style="animation-delay:.5s">
-  <path d="M928 330 V196 A72 72 0 0 1 1072 196 V330 Z" fill="{MID}" stroke="{ACC}" stroke-width="1.2"/>
-  <path d="M928 330 V196 A72 72 0 0 1 1072 196 V330 Z" fill="url(#{p}-glow)"/>
-  <text x="1000" y="268" text-anchor="middle" font-family="{SERIF}" font-size="104" font-style="italic" fill="{PALE}">S</text>
-  <text x="1000" y="312" text-anchor="middle" font-family="{AR}" font-size="22" fill="{GOLD}" direction="rtl">سمير</text>
-  <path d="M916 342 H948 M1052 342 H1084" stroke="{GOLD}" stroke-width="1"/>
+  <clipPath id="{p}-arch"><path d="M918 344 V172 A82 82 0 0 1 1082 172 V344 Z"/></clipPath>
+  <linearGradient id="{p}-fade" x1="0" y1="0" x2="0" y2="1"><stop offset="0.62" stop-color="{MID}" stop-opacity="0"/><stop offset="1" stop-color="{MID}" stop-opacity="0.92"/></linearGradient>
+  <path d="M918 344 V172 A82 82 0 0 1 1082 172 V344 Z" fill="{MID}"/>
+  <g clip-path="url(#{p}-arch)">
+    <image x="911" y="96" width="178" height="237" preserveAspectRatio="xMidYMid slice" href="data:image/jpeg;base64,{PHOTO}"/>
+    <rect x="900" y="90" width="200" height="260" fill="url(#{p}-fade)"/>
+  </g>
+  <path d="M918 344 V172 A82 82 0 0 1 1082 172 V344 Z" fill="none" stroke="{GOLD}" stroke-width="1.3"/>
+  <path d="M906 330 V356 H932 M1094 330 V356 H1068" fill="none" stroke="{GOLD}" stroke-width="1"/>
+  <circle cx="1000" cy="344" r="3" fill="{PALE}"/>
 </g>
 """
     svg("hero.svg", 440, body, "Samir Sayed — Full-Stack Engineer, AI Product Builder, RTL-first interfaces. Ismailia, Egypt.", p=p)
@@ -130,10 +139,10 @@ def about():
     lines = [
         ("$", "whoami"),
         ("→", "Samir Sayed · Full-Stack Engineer · AI Product Builder"),
-        ("$", "cat stack.txt"),
-        ("→", "React · TypeScript · Node/Express · Supabase · Gemini API"),
-        ("$", "cat focus.txt"),
-        ("→", "Arabic-first, RTL-native products for the Egyptian market"),
+        ("$", "cat education.txt"),
+        ("→", "Business Information Systems · Faculty of Commerce · SCU"),
+        ("$", "cat training.txt"),
+        ("→", "ITI Frontend Web Development (162h) · IEEE SCU Web Bootcamp"),
         ("$", "ls ./shipped"),
         ("→", "aqar-go   athar-portal   safe-space   env-friends"),
     ]
@@ -286,14 +295,83 @@ def footer():
     svg("footer.svg", 190, body, "Samir — building products people can actually use, in Arabic first.", p=p)
 
 
+# ---------------------------------------------------------------- recognition
+def recognition():
+    p = "rc"
+    big = [
+        (28, "2nd", "Faculty of Commerce · Env. Scientific Conf.", "2nd Place — Students",
+         "Research on environmental challenges & innovation in Egypt · 2026"),
+        (604, "97", "Suez Canal Authority · Summer Training 2025", "Excellent — 97 / 100",
+         "Communications & Information Systems department · Ismailia"),
+    ]
+    out = card(p, 10, 10, 1180, 430, 20)
+    for i, (x, ghost, eb, head, sub) in enumerate(big):
+        out += f"""<g class="su" style="animation-delay:{0.2 + i*0.2:.1f}s">
+<rect x="{x+.5}" y="30.5" width="567" height="200" rx="14" fill="{MID}" fill-opacity="0.75" stroke="{DEEP}"/>
+<rect x="{x+20}" y="30" width="70" height="1.5" fill="{PALE}"/>
+<text x="{x+548}" y="132" text-anchor="end" font-family="{SERIF}" font-size="118" fill="{GOLD}" opacity="0.16" font-style="italic">{esc(ghost)}</text>
+{eyebrow(x+26, 150, eb)}
+{t(x+24, 188, head, 32, IVORY, SERIF)}
+{t(x+26, 212, sub, 12.5, MUTED, SANS)}</g>"""
+    small = [
+        ("Organizing team", "8th + 7th", "Undergraduate Research Conferences"),
+        ("Model BRICS", "UAE", "delegate · faculty simulation"),
+        ("Media activities", "Excellence", "faculty recognition · twice"),
+        ("Volunteering", "2023–26", "student activities · faculty"),
+        ("Workshop", "Comms skills", "faculty seminar · July 2024"),
+    ]
+    out += f'<line x1="36" y1="262" x2="1164" y2="262" stroke="{DEEP}"/>'
+    for i, (eb, big_t, sub) in enumerate(small):
+        x = 40 + i * 228
+        out += f"""<g class="fi" style="animation-delay:{0.6 + i*0.12:.2f}s">
+<circle cx="{x+3}" cy="262" r="3.5" fill="{GOLD}"/>
+{eyebrow(x, 300, eb)}
+{t(x-1, 340, big_t, 30, IVORY, SERIF)}
+{t(x, 364, sub, 12, MUTED, SANS)}</g>"""
+    out += f'<text x="600" y="408" text-anchor="middle" font-family="{SERIF}" font-size="15" font-style="italic" fill="{MUTED}">Research, organizing and student leadership — alongside the code.</text>'
+    svg("recognition.svg", 450, out, "Recognition: 2nd place (students) at the Faculty of Commerce Environmental Scientific Conference 2026; Suez Canal Authority summer training 2025 rated Excellent, 97 of 100; organizing team of the 8th and 7th Undergraduate Research Conferences; UAE delegate in the faculty Model BRICS; faculty recognition for media activities; student volunteering 2023 to 2026; communication skills workshop, July 2024.", p=p)
+
+
+# ---------------------------------------------------------------- certifications
+def certifications():
+    p = "ce"
+    cells = [
+        ("ITI", 1, ["Frontend Web Development", "162 hours · Aug – Sep 2025"], "HTML · CSS · JS · jQuery · Sass"),
+        ("ITIDA · TIEC · Creativa", 2, ["UI/UX — 21 hours · Nov 2024", "Digital Marketing Nano Degree", "84 hours · Oct 2024"], ""),
+        ("ITIDA · TIEC InnovEgypt", 1, ["Innovation & Startup Training", "45 hours + startup final project"], ""),
+        ("IEEE SCU", 1, ["TechXplore Web Bootcamp", "30 Nov – 11 Dec 2025"], ""),
+        ("Suez Canal Authority", 1, ["Summer Training — Excellent", "Comms & IS dept. · Aug 2025"], ""),
+        ("Faculty of Commerce · SCU", 3, ["Research participation · 2026", "Conference organizing · 2025 / 26", "Communication skills · 2024"], ""),
+    ]
+    out = card(p, 10, 10, 1180, 400, 20)
+    for i, (prov, n, lines, foot) in enumerate(cells):
+        col, row = i % 3, i // 3
+        x, y = 36 + col * 380, 36 + row * 184
+        out += f'<g class="su" style="animation-delay:{0.15 + i*0.1:.2f}s"><rect x="{x+.5}" y="{y+.5}" width="351" height="163" rx="12" fill="{MID}" fill-opacity="0.7" stroke="{DEEP}"/>'
+        out += eyebrow(x + 22, y + 32, prov)
+        for d in range(n):
+            out += f'<circle cx="{x + 330 - d*12}" cy="{y + 28}" r="3.5" fill="{GOLD}"/>'
+        out += f'<line x1="{x+22}" y1="{y+48}" x2="{x+330}" y2="{y+48}" stroke="{DEEP}"/>'
+        for j, l in enumerate(lines):
+            out += t(x + 22, y + 80 + j * 24, l, 15 if j == 0 else 13.5, IVORY if j == 0 or (n > 1 and j % 1 == 0 and not l[0].isdigit()) else MUTED, SANS)
+        if foot:
+            out += eyebrow(x + 22, y + 146, foot, MUTED)
+        out += "</g>"
+    svg("certifications.svg", 420, out, "Certifications: ITI Frontend Web Development, 162 hours (2025); ITIDA, TIEC and Creativa UI/UX (21 hours, 2024) and Digital Marketing Nano Degree (84 hours, 2024); ITIDA TIEC InnovEgypt innovation and startup training, 45 hours; IEEE SCU TechXplore Web Bootcamp (2025); Suez Canal Authority summer training rated Excellent (2025); Faculty of Commerce, Suez Canal University: research participation, conference organizing and communication skills workshop.", p=p)
+
+
 hero()
+recognition()
+certifications()
 about()
 projects()
 toolkit()
 footer()
 title("title-about.svg", "01", "About", "Hello, I'm", "Samir.", "who I am")
-title("title-work.svg", "02", "Selected work", "Built for", "real users.", "shipped · in progress")
-title("title-toolkit.svg", "03", "Toolkit", "The tools I", "reach for.", "verified from my repos")
-title("title-commits.svg", "04", "Commit log", "A year of", "building.", "live · updated daily")
-title("title-connect.svg", "05", "Connect", "Let's build something", "worth using.", "open to work")
+title("title-recognition.svg", "02", "Recognition", "Proof,", "on the record.", "research · leadership · training")
+title("title-work.svg", "03", "Selected work", "Built for", "real users.", "shipped · in progress")
+title("title-toolkit.svg", "04", "Toolkit", "The tools I", "reach for.", "verified from my repos")
+title("title-commits.svg", "05", "Commit log", "A year of", "building.", "live · updated daily")
+title("title-certifications.svg", "06", "Certifications", "Training,", "verified.", "9 credentials")
+title("title-connect.svg", "07", "Connect", "Let's build something", "worth using.", "open to work")
 print("assets written to", OUT)
