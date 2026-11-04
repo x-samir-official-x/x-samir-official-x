@@ -1,13 +1,9 @@
 <div align="center">
 
-<img src="./assets/samir-hero.svg" alt="Samir Sayed — Full-Stack Engineer · AI Product Builder · RTL-First Interfaces" width="100%" />
-
-<br/>
-
-<a href="https://www.linkedin.com/in/samir-sayed-494a6b428"><img src="https://img.shields.io/badge/LinkedIn-14100A?style=for-the-badge&logo=linkedin&logoColor=EBD6A3" alt="LinkedIn" /></a>
-<a href="mailto:01283871350samir@gmail.com"><img src="https://img.shields.io/badge/Email-14100A?style=for-the-badge&logo=gmail&logoColor=EBD6A3" alt="Email" /></a>
-<a href="https://github.com/x-samir-official-x"><img src="https://img.shields.io/badge/GitHub-14100A?style=for-the-badge&logo=github&logoColor=EBD6A3" alt="GitHub" /></a>
-<a href="https://github.com/x-samir-official-x?tab=repositories"><img src="https://img.shields.io/badge/All%20Projects-14100A?style=for-the-badge&logo=files&logoColor=EBD6A3" alt="Projects" /></a>
+<picture>
+  <source media="(prefers-reduced-motion: reduce)" srcset="./assets/samir-hero-static.svg" />
+  <img src="./assets/samir-hero.svg" alt="Samir Sayed — Full-Stack Engineer · AI Product Builder · RTL-First Interfaces" width="100%" />
+</picture>
 
 </div>
 
@@ -56,16 +52,25 @@ Client and internal work, not public: **Kadry OS** (operations dashboard), **Ban
 
 <div align="center">
 
-### Contribution Activity
+### Contribution Heatmap
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=x-samir-official-x&bg_color=0B0906&color=EBD6A3&line=8A6A2B&point=D4AF63&area=true&area_color=3D2E14&hide_border=true&custom_title=Contributions%20%E2%80%94%20last%2031%20days" alt="GitHub contribution graph" width="100%" />
+<img src="https://raw.githubusercontent.com/x-samir-official-x/x-samir-official-x/profile-cards/heatmap.svg" alt="GitHub contribution heatmap — live data, updated daily" width="100%" />
 
 <br/><br/>
 
 ### GitHub Stats
 
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=x-samir-official-x&show_icons=true&hide_border=true&bg_color=0B0906&title_color=EBD6A3&icon_color=D4AF63&text_color=FBF7EE&ring_color=8A6A2B&hide_rank=false" alt="GitHub stats" />
-<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=x-samir-official-x&layout=compact&langs_count=6&hide_border=true&bg_color=0B0906&title_color=EBD6A3&text_color=FBF7EE" alt="Top languages" />
+<img src="https://raw.githubusercontent.com/x-samir-official-x/x-samir-official-x/profile-cards/stats.svg" alt="GitHub statistics" width="49%" />
+<img src="https://raw.githubusercontent.com/x-samir-official-x/x-samir-official-x/profile-cards/languages.svg" alt="Top languages" width="49%" />
+
+<br/><br/>
+
+### Find Me
+
+<a href="https://www.linkedin.com/in/samir-sayed-494a6b428"><img src="https://img.shields.io/badge/LinkedIn-14100A?style=for-the-badge&logo=linkedin&logoColor=EBD6A3" alt="LinkedIn" /></a>
+<a href="mailto:01283871350samir@gmail.com"><img src="https://img.shields.io/badge/Email-14100A?style=for-the-badge&logo=gmail&logoColor=EBD6A3" alt="Email" /></a>
+<a href="https://github.com/x-samir-official-x"><img src="https://img.shields.io/badge/GitHub-14100A?style=for-the-badge&logo=github&logoColor=EBD6A3" alt="GitHub" /></a>
+<a href="https://github.com/x-samir-official-x?tab=repositories"><img src="https://img.shields.io/badge/All%20Projects-14100A?style=for-the-badge&logo=files&logoColor=EBD6A3" alt="All projects" /></a>
 
 <br/><br/>
 
