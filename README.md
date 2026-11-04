@@ -5,6 +5,7 @@
 <br/>
 
 <a href="https://www.linkedin.com/in/samir-sayed-494a6b428"><img src="https://img.shields.io/badge/LinkedIn-190B12?style=for-the-badge&logo=linkedin&logoColor=E5B5C7" alt="LinkedIn" /></a>
+<a href="mailto:01283871350samir@gmail.com"><img src="https://img.shields.io/badge/Email-190B12?style=for-the-badge&logo=gmail&logoColor=E5B5C7" alt="Email" /></a>
 <a href="https://github.com/x-samir-official-x"><img src="https://img.shields.io/badge/GitHub-190B12?style=for-the-badge&logo=github&logoColor=E5B5C7" alt="GitHub" /></a>
 <a href="https://github.com/x-samir-official-x?tab=repositories"><img src="https://img.shields.io/badge/All%20Projects-190B12?style=for-the-badge&logo=files&logoColor=E5B5C7" alt="Projects" /></a>
 
