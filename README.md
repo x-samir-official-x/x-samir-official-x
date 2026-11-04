@@ -4,10 +4,10 @@
 
 <br/>
 
-<a href="https://www.linkedin.com/in/samir-sayed-494a6b428"><img src="https://img.shields.io/badge/LinkedIn-190B12?style=for-the-badge&logo=linkedin&logoColor=E5B5C7" alt="LinkedIn" /></a>
-<a href="mailto:01283871350samir@gmail.com"><img src="https://img.shields.io/badge/Email-190B12?style=for-the-badge&logo=gmail&logoColor=E5B5C7" alt="Email" /></a>
-<a href="https://github.com/x-samir-official-x"><img src="https://img.shields.io/badge/GitHub-190B12?style=for-the-badge&logo=github&logoColor=E5B5C7" alt="GitHub" /></a>
-<a href="https://github.com/x-samir-official-x?tab=repositories"><img src="https://img.shields.io/badge/All%20Projects-190B12?style=for-the-badge&logo=files&logoColor=E5B5C7" alt="Projects" /></a>
+<a href="https://www.linkedin.com/in/samir-sayed-494a6b428"><img src="https://img.shields.io/badge/LinkedIn-14100A?style=for-the-badge&logo=linkedin&logoColor=EBD6A3" alt="LinkedIn" /></a>
+<a href="mailto:01283871350samir@gmail.com"><img src="https://img.shields.io/badge/Email-14100A?style=for-the-badge&logo=gmail&logoColor=EBD6A3" alt="Email" /></a>
+<a href="https://github.com/x-samir-official-x"><img src="https://img.shields.io/badge/GitHub-14100A?style=for-the-badge&logo=github&logoColor=EBD6A3" alt="GitHub" /></a>
+<a href="https://github.com/x-samir-official-x?tab=repositories"><img src="https://img.shields.io/badge/All%20Projects-14100A?style=for-the-badge&logo=files&logoColor=EBD6A3" alt="Projects" /></a>
 
 </div>
 
@@ -58,14 +58,14 @@ Client and internal work, not public: **Kadry OS** (operations dashboard), **Ban
 
 ### Contribution Activity
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=x-samir-official-x&bg_color=10070C&color=E5B5C7&line=701A3D&point=C77B9B&area=true&area_color=451126&hide_border=true&custom_title=Contributions%20%E2%80%94%20last%2031%20days" alt="GitHub contribution graph" width="100%" />
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=x-samir-official-x&bg_color=0B0906&color=EBD6A3&line=8A6A2B&point=D4AF63&area=true&area_color=3D2E14&hide_border=true&custom_title=Contributions%20%E2%80%94%20last%2031%20days" alt="GitHub contribution graph" width="100%" />
 
 <br/><br/>
 
 ### GitHub Stats
 
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=x-samir-official-x&show_icons=true&hide_border=true&bg_color=10070C&title_color=E5B5C7&icon_color=C77B9B&text_color=F8F0F3&ring_color=701A3D&hide_rank=false" alt="GitHub stats" />
-<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=x-samir-official-x&layout=compact&langs_count=6&hide_border=true&bg_color=10070C&title_color=E5B5C7&text_color=F8F0F3" alt="Top languages" />
+<img height="165" src="https://github-readme-stats.vercel.app/api?username=x-samir-official-x&show_icons=true&hide_border=true&bg_color=0B0906&title_color=EBD6A3&icon_color=D4AF63&text_color=FBF7EE&ring_color=8A6A2B&hide_rank=false" alt="GitHub stats" />
+<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=x-samir-official-x&layout=compact&langs_count=6&hide_border=true&bg_color=0B0906&title_color=EBD6A3&text_color=FBF7EE" alt="Top languages" />
 
 <br/><br/>
 
