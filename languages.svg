@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="250" viewBox="0 0 440 250" role="img" aria-label="Top languages">
+<title>Top languages</title>
+<defs>
+  <linearGradient id="pc-bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0B0906"/><stop offset="1" stop-color="#14100A"/></linearGradient>
+</defs>
+<rect x="0.5" y="0.5" width="439" height="249" rx="14" fill="url(#pc-bg)" stroke="#3D2E14"/>
+<text x="28" y="44" font-family="Georgia, 'Times New Roman', serif" font-size="20" fill="#FBF7EE">Top Languages</text>
+<clipPath id="pc-bar"><rect x="28" y="68" width="384" height="10" rx="5"/></clipPath><g clip-path="url(#pc-bar)"><rect x="28.0" y="68" width="218.0" height="10" fill="#EBD6A3"/><rect x="246.0" y="68" width="65.7" height="10" fill="#D4AF63"/><rect x="311.7" y="68" width="52.3" height="10" fill="#B88F45"/><rect x="364.0" y="68" width="28.1" height="10" fill="#8A6A2B"/><rect x="392.1" y="68" width="19.5" height="10" fill="#6B5224"/><rect x="411.6" y="68" width="2.0" height="10" fill="#3D2E14"/></g><circle cx="33" cy="114" r="5" fill="#EBD6A3"/>
+<text x="46" y="118" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" fill="#FBF7EE">TypeScript</text>
+<text x="208" y="118" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" fill="#D4AF63">56.8%</text><circle cx="233" cy="114" r="5" fill="#D4AF63"/>
+<text x="246" y="118" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" fill="#FBF7EE">Python</text>
+<text x="408" y="118" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" fill="#D4AF63">17.1%</text><circle cx="33" cy="148" r="5" fill="#B88F45"/>
+<text x="46" y="152" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" fill="#FBF7EE">CSS</text>
+<text x="208" y="152" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" fill="#D4AF63">13.6%</text><circle cx="233" cy="148" r="5" fill="#8A6A2B"/>
+<text x="246" y="152" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" fill="#FBF7EE">JavaScript</text>
+<text x="408" y="152" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" fill="#D4AF63">7.3%</text><circle cx="33" cy="182" r="5" fill="#6B5224"/>
+<text x="46" y="186" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" fill="#FBF7EE">HTML</text>
+<text x="208" y="186" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" fill="#D4AF63">5.1%</text><circle cx="233" cy="182" r="5" fill="#3D2E14"/>
+<text x="246" y="186" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" fill="#FBF7EE">PLpgSQL</text>
+<text x="408" y="186" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" fill="#D4AF63">0.1%</text>
+<text x="28" y="232" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" fill="#D4AF63" opacity="0.7">By code size across public repositories</text>
+</svg>
